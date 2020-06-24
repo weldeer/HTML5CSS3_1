@@ -113,6 +113,9 @@ body {
     margin: 0 0 0 0;
     padding: 0 0 20px 0;
 }
+.about-product-text-p:last-child {
+    margin: 0;
+}
 
 .about-product-video{
     display: block;
@@ -129,6 +132,7 @@ body {
     padding: 50px;
     box-sizing: border-box;
     background-color: #f5f5f5;
+    padding-bottom: 30px;
 }
 
 .dignity-title {
@@ -151,7 +155,7 @@ body {
     /*border: 1px solid red;*/
 }
 .dignity-item-summ {
-    margin: 20px;
+    margin: 0 0 20px 0;
 ;
 }
 .dignity-item-summ::-webkit-details-marker {
@@ -169,10 +173,66 @@ body {
     height: 32px;
     width: 32px;
     text-align: center;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
+    line-height: 32px;
     float: left;
 }
 
-dignity-item[open] .summary:after {
+.dignity-item[open].summary:after {
     content: "-";
+}
+
+.screenshots{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.screenshots-title {
+    width: 100%;
+    margin: 0 0 0 0;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+.screenshots-item-wrp{
+    width: 100%;
+    display: flex;
+    /*flex-wrap: nowrap;*/
+}
+.screenshots-item{
+    /*border: 1px solid black;*/
+    margin: 30px 16px 0 0;
+    display: flex;
+}
+
+.screenshots-item:last-child{
+    margin-right: 0;
+}
+
+.screenshots-item-img{
+    width: 200px;
+    height: 150px;
+
+    /*float: left;*/
+}
+.screenshots-item-text{
+    padding: 0 0 0 16px;
+}
+.screenshots-item-title{
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.screenshots-item-text-lead{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 15px 0 0 0 ;
+    word-break: break-all;
 }
