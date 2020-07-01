@@ -221,7 +221,7 @@ body {
     /*float: left;*/
 }
 .screenshots-item-text{
-    padding: 0 0 0 16px;
+    padding: 0;
 }
 .screenshots-item-title{
     margin: 0;
